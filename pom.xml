@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>angular-load</artifactId>
-  <version>0.4.1-SNAPSHOT</version>
+  <version>0.4.1</version>
   <name>angular-load</name>
   <description>WebJar for the angular-load</description>
   <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
     <url>http://github.com/webjars/angular-load</url>
     <connection>scm:git:https://github.com/webjars/angular-load.git</connection>
     <developerConnection>scm:git:https://github.com/webjars/angular-load.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>angular-load-0.4.1</tag>
   </scm>
   
   <properties>
@@ -75,10 +75,10 @@
             <goals><goal>run</goal></goals>
             <configuration>
               <target>
-                <echo message="make tmp dir..."/>
-                <mkdir dir="${destDir}"/>
-                <echo message="unzip archive..."/>
-                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
+                <echo message="make tmp dir..." />
+                <mkdir dir="${destDir}" />
+                <echo message="unzip archive..." />
+                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                 <move todir="${destDir}">
                   <fileset dir="${project.build.directory}/angular-load-${upstream.version}">
                   </fileset>
